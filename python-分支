@@ -1,0 +1,82 @@
+# 1.定义一个整数变量记录年龄
+age = 15
+# 2.判断是否满了18岁
+if age >= 18:
+    # 3.如果满了18岁，可以进网吧嗨皮
+    print("你已经成年，欢迎进网吧嗨皮！")
+    print("欢迎欢迎，热烈欢迎")
+print("看看什么时候会执行")
+
+age = int(input("请输入年龄："))
+if age >= 18:
+    print("你已经成年，欢迎进网吧嗨皮！")
+else:
+    print("你还没成年，请回家写作业")
+    
+age = 0
+if age > 0 and age <= 120:
+    print("年龄正确")
+else:
+    print("年龄不正确")
+    
+python_score = 61
+c_score = 61
+if python_score > 60 and c_score >60:
+    print("考试通过")
+else:
+    print("考试失败，继续努力")  
+    
+is_employee = False
+if not is_employee:
+    print("非公司员工，请勿入内") 
+    
+# if嵌套，判断多个条件且有前后关系的
+has_ticket = True
+knife_length = int(input("输入长度："))
+if has_ticket:
+    print("车票检查通过，准备开始安检")
+    if knife_length > 20:
+        print("您携带的刀太长了，有%d公分长呢" % knife_length)
+        print("太危险了，不能上车")
+    else:
+        print("安检已经通过，祝你旅途愉快")
+else:
+    print("大哥，请先买票")
+    
+import random        # 导入random模块，使用random.randint(a, b)，表示取出a到b之间的任意整数
+player = int(input("请输入您要出的拳 石头(1)/剪刀(2)/布(3):"))
+computer = random.randint(1, 3)
+print("您要出的拳:%d 电脑出的拳：%d" % (player, computer))
+# 加个小括号，代码可以换行！
+if ((player == 1 and computer == 2)
+        or (player == 2 and computer == 3)
+        or (player == 3 and computer == 1)):
+    print("欧耶！电脑弱爆了")
+elif player == computer:
+    print("真是心有灵犀")
+else:
+    print("不服气，决战到天亮")
+    
+    程序的三大流程：
+    顺序---从上向下，顺序执行代码
+    分支---根据条件判断，决定执行代码分支
+    循环---让特定代码重复执行
+
+# print("hello world  " * 5)
+i = 0
+while i < 5:
+    print("hello world")
+    # i = i + 1
+    i += 1
+print("循环结束后，i=%d" % i)
+
+赋值运算符：
+最常用的三个：
+c=a+b将a+b的运算结果赋值为c
+c+=a--->c=c+a
+c-=a--->c=c-a
+
+python中的技术方法：从0开始计数的
+
+循环计算：
+
