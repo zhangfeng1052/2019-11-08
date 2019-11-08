@@ -79,4 +79,77 @@ c-=a--->c=c-a
 python中的技术方法：从0开始计数的
 
 循环计算：
+# 0到100求和
+# 定义一个整数的变量记录循环的次数
+i = 0
+# 定义最终结果的变量
+j = 0
+while i <= 100:
+    # 每次循环，都让j这个变量和i这个计数器相加
+    j += i
+    # 处理计数器
+    i += 1
+print(j)
+
+#100内偶数的求和：
+法一：
+i = 0
+j = 0
+while i <= 100:
+    if i % 2 == 0:
+        print(i)
+        j += i
+    i += 1
+print(j)
+法二：
+i = 0
+j = 0
+while i <= 100:
+    j += i
+    # 处理计数器
+    i += 2
+print(j)
+
+# break 某一条件满足时，退出循环，不再执行后续重复的代码
+i = 0
+while i < 10:
+    if i == 3:
+        break
+    print(i)
+    i += 1
+print("over")
+结果：
+D:\03_循环\venv\Scripts\python.exe D:/03_循环/mb_04_break.py
+0
+1
+2
+over
+
+#  continue 某一条件满足时，不再执行后续重复的代码
+i = 0
+while i < 10:
+    if i == 3:
+        i += 1
+        continue
+        # 注意：在循环中，如果使用continue 这个关键字
+        # 在使用关键字之前，需要确认循环的计算器是否修改
+        # 否则会导致死循环
+    print(i)
+    i += 1
+print("over")
+结果:
+D:\03_循环\venv\Scripts\python.exe D:/03_循环/mb_05_continue.py
+012456789over
+
+# 打印小星星
+row = 1
+while row <= 5:
+    print("*" * row)
+    row += 1
+结果：
+*
+**
+***
+****
+*****
 
